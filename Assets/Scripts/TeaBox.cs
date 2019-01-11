@@ -48,7 +48,7 @@ public class TeaBox : MonoBehaviour
     }
 
     //function for saving the score, this will be public as it will need to be saved between levels 
-    public void SaveTeaBag()
+    public void SaveTeaBox()
     {
         PlayerPrefs.SetInt("teabox", numericalScore);
 

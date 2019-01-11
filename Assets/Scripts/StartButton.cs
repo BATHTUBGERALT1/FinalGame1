@@ -12,7 +12,7 @@ public class StartButton : MonoBehaviour {
         SceneManager.LoadScene("Level 1");
         //reset the lives 
         PlayerPrefs.DeleteKey("lives");
-        
+
 
     }
 }

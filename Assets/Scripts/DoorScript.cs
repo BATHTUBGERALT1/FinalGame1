@@ -11,6 +11,8 @@ public class DoorScript : MonoBehaviour
     // variable to let us add to the score 
     // public so we can drag and drop 
     public TeaBag scoreObject;
+    public Sugar SugarObject;
+    public TeaBox TeaBoxObject;
 
     //designer variables 
     public string sceneToLoad;
@@ -30,7 +32,10 @@ public class DoorScript : MonoBehaviour
 
             // save the score using our score object reference 
             scoreObject.SaveTeaBag();
+          
+            SugarObject.SaveSugar();
 
+            TeaBoxObject.SaveTeaBox();
             //next level
             SceneManager.LoadScene(sceneToLoad);
 
