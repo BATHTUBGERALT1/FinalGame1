@@ -18,7 +18,7 @@ public class Highscores : MonoBehaviour {
         LoadHighScoreData();
 
         //check if we got a high score
-        int currentScore = PlayerPrefs.GetInt("score", 0) + PlayerPrefs.GetInt("sugar", 0) + PlayerPrefs.GetInt("teabag", 0) + PlayerPrefs.GetInt("teabox", 0);
+        int currentScore = PlayerPrefs.GetInt("sugar", 0) + PlayerPrefs.GetInt("teabag", 0) + PlayerPrefs.GetInt("teabox", 0);
         bool haveNewHighScore = IsNewHighScore(currentScore);
         if (haveNewHighScore == true);
         {
@@ -128,6 +128,20 @@ public class Highscores : MonoBehaviour {
         }
         // save the player prefs to disk 
         PlayerPrefs.Save();
+    }
+
+    [ContextMenu("RESET ALL SCORES")]
+    public void ResetScores()
+    {
+
+        for (int i = 0; i < highScoreDisplays.Count; ++i)
+        {
+            // using the loop index, get the name for our playerprefs key
+            string prefsKey = "highScore" + i.ToString();
+
+            // use this key to delete
+            PlayerPrefs.DeleteKey(prefsKey);
+        }
     }
 }
 

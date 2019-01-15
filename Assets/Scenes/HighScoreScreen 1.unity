@@ -656,8 +656,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1128606764}
-  - component: {fileID: 1128606766}
   - component: {fileID: 1128606765}
+  - component: {fileID: 1128606766}
   m_Layer: 0
   m_Name: HighScoreContainer
   m_TagString: Untagged
@@ -1056,6 +1056,7 @@ GameObject:
   - component: {fileID: 1920329914}
   - component: {fileID: 1920329913}
   - component: {fileID: 1920329912}
+  - component: {fileID: 1920329915}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1079,7 +1080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -286}
+  m_AnchoredPosition: {x: 0, y: -251}
   m_SizeDelta: {x: 213.3, y: 54.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920329912
@@ -1121,12 +1122,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1920329910}
-        m_MethodName: 
+      - m_Target: {fileID: 1920329915}
+        m_MethodName: GoToHomeScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1168,6 +1169,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1920329910}
   m_CullTransparentMesh: 0
+--- !u!114 &1920329915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920329910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d788cab811b14a4daac0b56e7d0531e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1970598859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,7 +1212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000019073, y: 281.9}
+  m_AnchoredPosition: {x: -0.0000019073, y: 254}
   m_SizeDelta: {x: 830.6, y: 52.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1970598861
