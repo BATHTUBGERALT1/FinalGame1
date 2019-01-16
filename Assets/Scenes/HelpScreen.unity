@@ -634,7 +634,7 @@ MonoBehaviour:
 
     The Joysticks on the controller to move the character
 
-    With A to Jump'
+    With Y or Triangle to Jump'
 --- !u!222 &1428102309
 CanvasRenderer:
   m_ObjectHideFlags: 0
