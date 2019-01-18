@@ -20,7 +20,7 @@ public class Highscores : MonoBehaviour {
         //check if we got a high score
         int currentScore = PlayerPrefs.GetInt("sugar", 0) + PlayerPrefs.GetInt("teabag", 0) + PlayerPrefs.GetInt("teabox", 0);
         bool haveNewHighScore = IsNewHighScore(currentScore);
-        if (haveNewHighScore == true);
+        if (haveNewHighScore == true)
         {
             //adds new score to the current list
             AddScoreToList(currentScore);
