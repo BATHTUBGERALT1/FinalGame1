@@ -8,6 +8,8 @@ public class HelpScreenButton : MonoBehaviour {
 
     public void HelpScreen()
     {
+        //loads the main menu screen
+
         SceneManager.LoadScene("HomeScreen");
 
 

@@ -773,8 +773,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 52636283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -303, y: 186.1, z: 0}
-  m_LocalScale: {x: 12.921, y: 16.9632, z: 50}
+  m_LocalPosition: {x: -295.73, y: 181.82, z: 0}
+  m_LocalScale: {x: 14.08389, y: 19.338047, z: 50}
   m_Children:
   - {fileID: 630481929}
   - {fileID: 1125990334}
@@ -7408,8 +7408,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1155676728}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.017, y: 0.01, z: 100}
-  m_LocalScale: {x: 6.404156, y: 4.478163, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0.05, z: 100}
+  m_LocalScale: {x: 8.068917, y: 7.1743617, z: 0}
   m_Children: []
   m_Father: {fileID: 1406403600}
   m_RootOrder: 0
@@ -9478,7 +9478,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -9501,7 +9501,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1406403597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7399998, y: 1.1099999, z: -10}
+  m_LocalPosition: {x: -0.7399998, y: 2.67, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1155676729}
@@ -47272,7 +47272,7 @@ MonoBehaviour:
   jumpSpeed: 10
   physicsBody: {fileID: 1985300465}
   horizontalAxis: Horizontal
-  jumpButton: Jump
+  jumpButton: Submit
   playerAnimator: {fileID: 1985300460}
   playerSprite: {fileID: 1985300462}
   playerCollider: {fileID: 1985300464}

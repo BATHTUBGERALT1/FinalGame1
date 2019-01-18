@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Highscores : MonoBehaviour {
 
-    //the text used to display the scores
+    //displays the score
     public List<Text> highScoreDisplays = new List<Text>();
 
     private List<int> highScoreData = new List<int>();
@@ -14,17 +14,17 @@ public class Highscores : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        //this takes the highest score from the player prefs 
+        //takes the high score from player prefs
         LoadHighScoreData();
 
-        //check if we got a high score
+        //looks to see if we got a new high score
         int currentScore = PlayerPrefs.GetInt("sugar", 0) + PlayerPrefs.GetInt("teabag", 0) + PlayerPrefs.GetInt("teabox", 0);
         bool haveNewHighScore = IsNewHighScore(currentScore);
         if (haveNewHighScore == true)
         {
-            //adds new score to the current list
+            //if it is a new high score add it to the list
             AddScoreToList(currentScore);
-            //save the score 
+            //saves the score
             SaveHighScoreData();
 
         }

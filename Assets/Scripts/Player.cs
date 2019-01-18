@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public float jumpSpeed = 10;
     public Rigidbody2D physicsBody;
     public string horizontalAxis = "Horizontal";
-    public string jumpButton = "Jump";
+    public string jumpButton = "Submit";
 
     public Animator playerAnimator;
     public SpriteRenderer playerSprite;

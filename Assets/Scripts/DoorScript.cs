@@ -14,29 +14,26 @@ public class DoorScript : MonoBehaviour
     public Sugar SugarObject;
     public TeaBox TeaBoxObject;
 
-    //designer variables 
+    
     public string sceneToLoad;
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        //check if the thing that we collided with 
-        // is the player(has a player script)
+        //checks the playerscript has been collided with
         Player playerScript = collision.collider.GetComponent<Player>();
 
-        // only do something if the thing we ran into 
-        // was infact the player
-        // akak playerscript is not null
+        // something only happens when the play is hit
         if (playerScript != null)
         {
             // we DID hit the player !!!!!!
 
-            // save the score using our score object reference 
+            // saves the seperate scores 
             scoreObject.SaveTeaBag();
           
             SugarObject.SaveSugar();
 
             TeaBoxObject.SaveTeaBox();
-            //next level
+            //goes to the high score screen
             SceneManager.LoadScene(sceneToLoad);
 
         }
